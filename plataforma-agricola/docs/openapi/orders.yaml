@@ -1,0 +1,17 @@
+openapi: 3.0.1
+info:
+  title: Orders Service API
+  version: 0.1.0
+paths:
+  /api/v1/orders:
+    post:
+      summary: Create order
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '202':
+          description: accepted
